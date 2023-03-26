@@ -1,0 +1,101 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 14,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["import"],
+  "rules": {
+    "import/no-unresolved": [
+      2,
+      {
+        "commonjs": true,
+        "amd": true
+      }
+    ],
+    "indent": "off",
+    "no-console": 0,
+    "no-cond-assign": [2, "always"],
+    "no-ex-assign": 2,
+    "curly": 2,
+    "max-depth": [2, 5],
+    "complexity": [1, 8],
+    "prefer-const": 1,
+    "one-var": [2, "never"],
+    "func-names": [2, "never"],
+    "max-nested-callbacks": [2, 5],
+    "new-cap": 0,
+    "no-nested-ternary": 2,
+    "no-new-object": 2,
+    "arrow-body-style": [2, "as-needed"],
+    "operator-assignment": [2, "always"],
+    "no-delete-var": 2,
+    "no-underscore-dangle": 0,
+    "no-shadow": 2,
+    "no-shadow-restricted-names": 2,
+    "no-undef-init": 2,
+    "no-undef": 2,
+    "no-global-assign": 2,
+    "no-unused-vars": [
+      2,
+      {
+        "vars": "all",
+        "args": "after-used",
+        "varsIgnorePattern": "hJSX"
+      }
+    ],
+    "no-useless-escape": "off",
+    "yoda": [2, "never"],
+    "consistent-return": 2,
+    "spaced-line-comment": 0,
+    "eqeqeq": 2,
+    "guard-for-in": 2,
+    "no-alert": 2,
+    "no-caller": 2,
+    "no-labels": 2,
+    "no-eval": 2,
+    "no-fallthrough": 2,
+    "default-case": 2,
+    "no-import-assign": 0,
+    "no-iterator": 2,
+    "no-loop-func": 2,
+    "no-multi-str": 2,
+    "no-new": 2,
+    "no-param-reassign": 2,
+    "no-proto": 2,
+    "no-prototype-builtins": 0,
+    "no-redeclare": 2,
+    "no-return-assign": 2,
+    "no-self-compare": 2,
+    "no-sequences": 2,
+    "no-throw-literal": 2,
+    "no-unused-expressions": 2,
+    "no-useless-catch": 1,
+    "no-with": 2,
+    "vars-on-top": 0,
+    "valid-typeof": 2,
+    "max-statements": [1, 30],
+    "max-params": [1, 6],
+    "no-var": 2,
+    "no-unexpected-multiline": 2,
+    "no-unreachable": 2,
+    "no-negated-in-lhs": 2,
+    "no-irregular-whitespace": 2,
+    "no-invalid-regexp": 2,
+    "no-func-assign": 2,
+    "no-extra-boolean-cast": 2,
+    "no-empty": 2,
+    "no-duplicate-case": 2,
+    "no-dupe-keys": 2,
+    "no-dupe-args": 2,
+    "no-constant-condition": 2,
+    "no-lonely-if": 2
+  }
+}
